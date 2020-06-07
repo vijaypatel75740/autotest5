@@ -532,40 +532,6 @@ function postImageWidth(post_link,token) {
           console.log('avilabilty: ', avilabilty);
 
           if(siteheadidsdng && siteheading && sitestrckprice && sitestrckpricessds && savepercent ){
-          //   var images = [siteheadidsdng,'public/logo.png'];
-
-          // var jimps = [];
-
-          // for (var i = 0; i < images.length; i++) {
-          //   jimps.push(jimp.read(images[i]));
-          // }
-
-          // Promise.all(jimps).then(function(data) {
-          //   return Promise.all(jimps);
-          // }).then(function(data) {
-          //   console.log('data: ', data);
-          //   data[0].composite(data[1],0,0);
-          //   // data[0].composite(data[2],0,0);
-
-          //   data[0].write('public/finalimages/test.png', function() {
-          //     console.log("wrote the image");
-          //   });
-          // });
-
-    //       cloudinary.uploader.upload(
-    //         siteheadidsdng, 
-    //   {
-    //     secure: true, transformation: [
-    //       { crop: "fill"},
-    //       {overlay: "jnqzqtggxmoxrtjqqgla", gravity: "south_east", x: 30, y: 1350, width: 340, opacity: 100},
-    //       ]
-
-    //     }, 
-    //   function(error, result) { 
-    //     telePost(result.url,siteheading,sitestrckprice,sitestrckpricessds,savepercent,post_link,avilabilty)
-    //     console.log(result) 
-    //   }
-    // );
         telePost(token,siteheadidsdng,siteheading,sitestrckprice,sitestrckpricessds,savepercent,post_link,avilabilty)
             console.log("===i");
          } else if(siteheadidsdng && siteheading && sitestrckpricessds && avilabilty ){
@@ -579,8 +545,7 @@ function postImageWidth(post_link,token) {
     }
 
     function telePost (token,post_img,post_title,post_regularPrice,post_sellPrice,savepercent,post_link,avilabilty) {
-      var chatId = '@bestshoppingdeal00'; // <= replace with yours
-
+      var chatId = '@onlywomensworld'; // <= replace with yours
       // var savings = post_regularPrice - post_sellPrice;
       // var savEPERCENT = Math.round(100 * savings / post_regularPrice);
 
@@ -616,7 +581,7 @@ function postImageWidth(post_link,token) {
     }
 
     function telePosted (token,post_img,post_title,post_sellPrice,post_link,avilabilty) {
-      var chatId = '@bestshoppingdeal00'; // <= replace with yours
+      var chatId = '@onlywomensworld'; // <= replace with yours
 
       // var savings = post_regularPrice - post_sellPrice;
       // var savEPERCENT = Math.round(100 * savings / post_regularPrice);
